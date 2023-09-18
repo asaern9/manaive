@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <menuitem id="manavie_root_menu" name="Manavie">
+        <menuitem id="movie" action="movie_action" sequence="2"/>
+        <menuitem id="movie_fetch" action="movie_fetch_action" sequence="5"/>
+        <menuitem id="movie_kanban" action="movie_action_kanban" sequence="10"/>
+    </menuitem>
+
+
+</odoo>

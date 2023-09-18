@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!--    Tree view -->
+
+    <record id="movie_tree_view" model="ir.ui.view">
+        <field name="name">movie.tree.view</field>
+        <field name="model">movie</field>
+        <field name="arch" type="xml">
+            <tree string="Movies">
+                <field name="title"/>
+            </tree>
+        </field>
+    </record>
+
+    <!--    Form View -->
+
+<!--    <record id="movie_form_view" model="ir.ui.view">-->
+<!--        <field name="name">movie.form.view</field>-->
+<!--        <field name="model">movie</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <search string="Tests">-->
+<!--                <field name="title"/>-->
+<!--            </search>-->
+<!--            <form string="Movie">-->
+<!--                <header>-->
+<!--                    <button name="update_movie" string="Update movie" type="object" class="btn-primary"/>-->
+<!--                </header>-->
+<!--                <sheet>-->
+<!--                    <group>-->
+<!--                        <group>-->
+<!--                            <field string="" name="poster" widget="image" class="oe_avatar"-->
+<!--                                   options="{'size': [720, 450]}" style="float:left; margin-left: 100px;"/>-->
+<!--                        </group>-->
+<!--                        <group>-->
+<!--                            <field name="title"/>-->
+<!--                            <field name="runtime" widget="float_time"/>-->
+<!--                            <field name="release_date"/>-->
+<!--                            <field name="storyline"/>-->
+<!--                            <field name="imdb_rating" widget="priority"/>-->
+<!--                            <field name="link_to_trailer" widget="url"/>-->
+<!--                            <field name="genre_ids" widget="many2many_tags" placeholder="Select genre..."/>-->
+<!--                            <field name="parental_guide"/>-->
+<!--                            <field name="original_language_id" placeholder="Add language..."/>-->
+<!--                            <field name="publisher_ids" widget="many2many_tags" placeholder="Select publisher..."/>-->
+<!--                            <field name="distributor_ids" widget="many2many_tags" placeholder="Select distributor..."/>-->
+<!--                            <field name="box_office"/>-->
+<!--                            <field name="stage_id" placeholder="Select stage..."/>-->
+<!--                        </group>-->
+<!--                    </group>-->
+<!--                    <notebook>-->
+<!--                        <page string="Casts">-->
+<!--                            <field name="cast_ids"/>-->
+<!--                        </page>-->
+<!--                        <page string="Producers">-->
+<!--                            <field name="producer_ids"/>-->
+<!--                        </page>-->
+<!--                        <page string="Directors">-->
+<!--                            <field name="director_ids"/>-->
+<!--                        </page>-->
+<!--                        <page string="Writers">-->
+<!--                            <field name="writer_ids"/>-->
+<!--                        </page>-->
+<!--                        <page string="Editors">-->
+<!--                            <field name="editor_ids"/>-->
+<!--                        </page>-->
+<!--                        <page string="Story by">-->
+<!--                            <field name="story_partner_ids"/>-->
+<!--                        </page>-->
+<!--                        <page string="Music by">-->
+<!--                            <field name="music_partner_ids"/>-->
+<!--                        </page>-->
+<!--                        <page string="Screenplay by">-->
+<!--                            <field name="screenplay_partner_ids"/>-->
+<!--                        </page>-->
+<!--                    </notebook>-->
+<!--                </sheet>-->
+<!--            </form>-->
+<!--        </field>-->
+<!--    </record>-->
+
+    <!--    Search View-->
+    <record id="movie_search_view" model="ir.ui.view">
+        <field name="name">movie.search.view</field>
+        <field name="model">movie</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="title"/>
+            </search>
+        </field>
+    </record>
+</odoo>

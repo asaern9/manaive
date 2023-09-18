@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!--    Tree view -->
+
+    <record id="movie_kanban_view" model="ir.ui.view">
+        <field name="name">movie.kanban.view</field>
+        <field name="model">movie</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="stage_id" class="o_kanban_project_tasks" string="Watchlist">
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_color_2 oe_kanban_global_click">
+                            <div class="oe_resource_details">
+                                <ul>
+                                    <ol>
+                                        <strong class="oe_partner_heading">
+                                            <field name="title"/>
+                                        </strong>
+                                    </ol>
+                                    <ol>
+                                        <field name="release_date"/>
+                                    </ol>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="movie_action" model="ir.actions.act_window">
+        <field name="name">Movies</field>
+        <field name="res_model">movie</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+     <record id="movie_action_kanban" model="ir.actions.act_window">
+        <field name="name">Watchlist</field>
+        <field name="res_model">movie</field>
+        <field name="view_mode">kanban</field>
+    </record>
+
+     <record id="movie_fetch_action" model="ir.actions.act_window">
+        <field name="name">Fetch Movies</field>
+        <field name="res_model">movie.fetch</field>
+         <field name="view_mode">form</field>
+         <field name="target">new</field>
+         <field name="type">ir.actions.act_window</field>
+    </record>
+</odoo>
